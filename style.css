@@ -1,12 +1,10 @@
 * {
-    background-color: aqua;
+    background-color: darkolivegreen;
 }
 #quote-box {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: brown;
-}
-body {
-    background-color: bisque;
 }
