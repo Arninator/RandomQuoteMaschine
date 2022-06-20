@@ -1,6 +1,12 @@
+* {
+    background-color: aqua;
+}
 #quote-box {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: brown;
+}
+body {
+    background-color: bisque;
 }
