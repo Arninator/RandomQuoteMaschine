@@ -1,10 +1,74 @@
 * {
-    background-color: yellow;
+    margin: 0;
+    padding: 0;
 }
-#quote-box {
+body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: brown;
+    background-color: rgb(44, 88, 46);
+    height: 100vh;
 }
+#quote-box {
+    width: 50vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: beige;
+    border-radius: 5px;
+}
+div {
+    margin: 5%;
+}
+#text {
+    font-size: 3rem;
+    text-align: left;
+    background-color: transparent;
+}
+#author {
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: transparent;
+}
+#controls {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: transparent;
+}
+#new-quote {
+    padding: 3%;
+    background-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 900;
+    border-radius: 5px;
+    
+}
+#new-quote:hover {
+    animation-name: blink;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+i {
+    color: rgb(190, 171, 147);
+}
+
+@keyframes blink {
+    0% {background-color: rgb(32, 29, 29);}
+    10% {background-color: magenta;}
+    20% {background-color: yellow;}
+    30% {background-color: olivedrab;}
+    40% {background-color: orangered;}
+    50% {background-color: whitesmoke;}
+    60% {background-color: cyan;}
+    70% {background-color: orange;}
+    80% {background-color: darkorchid;}
+    90% {background-color: lightgoldenrodyellow;}
+    100% {background-color: blue;}
+  }
