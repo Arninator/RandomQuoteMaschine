@@ -14,12 +14,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
-    min-height: 100%;
     padding: 1%;
-    position: absolute;
+    max-height: 100%;
 }
 #quote-box {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 20vh;
     display: flex;
@@ -33,7 +32,6 @@ body {
     text-align: justify;
 }
 #text {
-    text-transform: capitalize;
     font-size: 50px;
     color: darkorange;
     margin-bottom: 15px;
@@ -82,6 +80,24 @@ i:hover {
     animation-name: blink;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
+}
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    top: 95vh;
+    color: aliceblue;
+    background-color: black;
+}
+#link {
+    color: aliceblue;
+    text-decoration: none;
+}
+#link:hover {
+    color: darkorange;
 }
 @keyframes blink {
     0% {color: rgb(32, 29, 29);}
