@@ -18,7 +18,7 @@ body {
     max-height: 100%;
 }
 #quote-box {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 20vh;
     display: flex;
@@ -30,6 +30,8 @@ body {
     font-size: large;
     color: aliceblue;
     text-align: justify;
+    max-height: 69vh;
+    overflow: hidden;
 }
 #text {
     font-size: 50px;
