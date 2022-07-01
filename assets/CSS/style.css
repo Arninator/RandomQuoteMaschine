@@ -68,6 +68,10 @@ body {
     animation-iteration-count: infinite;*/
     color: darkorange;
 }
+#new-quote {
+    font-size: 1.5rem;
+    color: darkorange;
+}
 i {
     color: aliceblue;
     size: 100px;
