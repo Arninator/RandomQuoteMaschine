@@ -14,11 +14,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 1%;
     position: absolute;
 }
 #quote-box {
+    top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -33,13 +34,13 @@ body {
     text-transform: capitalize;
     font-size: 50px;
     color: darkorange;
+    margin-bottom: 15px;
 }
-/*#author {
-    width: 90%;
+#author {
     font-size: 1.5rem;
-    text-align: left;
-    background-color: transparent;
-}*/
+    color: darkorange;
+    text-align: right;
+}
 #controls {
     width: 90%;
     display: flex;
@@ -51,7 +52,7 @@ body {
     top: 5%;
     left: 5%;
 }
-#new-quote {
+.new-quotes {
     padding: 1%;
     margin-bottom: 1%;
     background-color: transparent;
@@ -61,12 +62,11 @@ body {
     border-style: none;
     color:aliceblue;
 }
-#new-quote:hover {
+.new-quotes:hover {
     /*animation-name: blink;
     animation-duration: 0.4s;
     animation-iteration-count: infinite;*/
     color: darkorange;
-    font-style: italic;
 }
 i {
     color: aliceblue;

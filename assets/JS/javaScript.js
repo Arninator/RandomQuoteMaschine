@@ -19,8 +19,13 @@ function newQuote() {
 
             for (let i = 0; i < allQuotes.quotes.length; i++) {
                 if (i == randomValue) {
-                    $("#quote-box").append("<div id='text'><span style='font-size:75px;'>\"  </span>" + allQuotes.quotes[i].quote + "<span style='font-size:25px;'>&nbsp;&nbsp;" + allQuotes.quotes[i].author + "</span></div>")
-                    //$("#quote-box").append("<div id='text'><span style='font-size:50px;'>" + allQuotes.quotes[i].quote + "</span>" + "<span style='font-size:25px;'>&nbsp;&nbsp;" + allQuotes.quotes[i].author + "</span></div>")
+                    //$("#quote-box").append("<div id='text'><span style='font-size:75px;'>\"  </span>" + allQuotes.quotes[i].quote + "<span style='font-size:25px;'>&nbsp;&nbsp;" + allQuotes.quotes[i].author + "</span></div>")
+                    $("#quote-box").append("<div id='text'><span style='font-size:75px;'>\"  </span>" + allQuotes.quotes[i].quote
+                        + "</div><div id='author'>&nbsp;&nbsp;" + allQuotes.quotes[i].author + "</div>"
+                        + "<button type='submit' class='new-quotes' id='new-quote'> &rarr;</button>");
+                        $("#new-quote").on('click', function() {
+                            newQuote();
+                        });
                 } else {
                     $("#quote-box").append(allQuotes.quotes[i].quote)
                     //console.log(i + ": " + allQuotes.quotes[i].quote);
@@ -33,9 +38,10 @@ function newQuote() {
 
 $(function() {
     newQuote();
-    $("#new-quote").on('click', function() {
+    $("#new-quote2").on('click', function() {
         newQuote();
     });
+    
 });
 
 
