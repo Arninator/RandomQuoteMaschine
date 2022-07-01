@@ -19,7 +19,9 @@ body {
     position: absolute;
 }
 #quote-box {
-    top: 100px;
+    position: fixed;
+    left: 0;
+    top: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
