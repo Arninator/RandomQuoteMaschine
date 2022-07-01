@@ -1,39 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@500&family=Yanone+Kaffeesatz:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Finlandica', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
 }
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(44, 88, 46);
-    height: 100vh;
+    background-color: black;
+    min-height: 100vh;
+    padding: 1%;
+    position: absolute;
 }
 #quote-box {
-    width: 50vw;
-    min-height: 50vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: beige;
-    border-radius: 5px;
-}
-div {
-    margin: 5%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    background-color: black;
+    font-size: large;
+    color: aliceblue;
+    text-align: justify;
 }
 #text {
-    font-size: 3rem;
-    text-align: left;
-    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: darkorange;
 }
-#author {
+/*#author {
     width: 90%;
     font-size: 1.5rem;
     text-align: left;
     background-color: transparent;
-}
+}*/
 #controls {
     width: 90%;
     display: flex;
@@ -41,34 +47,46 @@ div {
     justify-content: space-between;
     align-items: baseline;
     background-color: transparent;
+    position: fixed;
+    top: 5%;
+    left: 5%;
 }
 #new-quote {
-    padding: 3%;
+    padding: 1%;
+    margin-bottom: 1%;
     background-color: transparent;
     font-size: 2.5rem;
     font-weight: 900;
     border-radius: 5px;
-    
+    border-style: none;
+    color:aliceblue;
 }
 #new-quote:hover {
-    animation-name: blink;
-    animation-duration: 0.2s;
-    animation-iteration-count: infinite;
+    /*animation-name: blink;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;*/
+    color: darkorange;
+    font-style: italic;
 }
 i {
-    color: rgb(190, 171, 147);
+    color: aliceblue;
+    size: 100px;
 }
-
+i:hover {
+    animation-name: blink;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
 @keyframes blink {
-    0% {background-color: rgb(32, 29, 29);}
-    10% {background-color: magenta;}
-    20% {background-color: yellow;}
-    30% {background-color: olivedrab;}
-    40% {background-color: orangered;}
-    50% {background-color: whitesmoke;}
-    60% {background-color: cyan;}
-    70% {background-color: orange;}
-    80% {background-color: darkorchid;}
-    90% {background-color: lightgoldenrodyellow;}
-    100% {background-color: blue;}
+    0% {color: rgb(32, 29, 29);}
+    /*10% {color: magenta;}*/
+    20% {color: yellow;}
+    /*30% {color: olivedrab;}
+    40% {color: orangered;}
+    50% {color: whitesmoke;}
+    60% {color: cyan;}
+    70% {color: orange;}
+    80% {color: darkorchid;}
+    90% {color: lightgoldenrodyellow;}
+    100% {color: blue;}*/
   }
